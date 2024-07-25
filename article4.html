@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+</html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Creative - Bootstrap Portfolio Theme</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome CSS-->
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <!-- Google fonts - Roboto-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+  <!-- owl carousel-->
+  <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
+  <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+  <!-- Custom stylesheet - for your changes-->
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="img/favicon.png">
+  <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  <style>
+      .sidebar-item {
+        margin-bottom: 30px; /* 设置列表项之间的间隔 */
+      }
+  
+      img {
+        display: block;
+        margin: 50px auto; /* 图片上下间隔20px，自动水平居中 */
+      }
+  
+      .lang-switch {
+        display: flex;
+        justify-content: center; /* 按钮水平居中 */
+        gap: 10px; /* 按钮之间的间隔为10px */
+        margin-top: 20px; /* 与上方元素的间隔为20px */
+      }
+      .content-column-content {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+  </style>
+  
+</head>
+
+
+<body>
+  <div id="all">
+    <div class="container-fluid">
+      <div class="row row-offcanvas row-offcanvas-left"> 
+        <!--   *** SIDEBAR ***-->
+        <div id="sidebar" class="col-md-4 col-lg-3 sidebar-offcanvas">
+          <div class="sidebar-content">
+            <h1 class="sidebar-heading" style="font-size: 35px;"><a href=" ">Articles</a ></h1>
+            
+            <ul class="sidebar-menu">
+                <!-- Link-->
+                <li class="sidebar-item"><a href="index.html" class="sidebar-link active">Home</a></li>
+                <!-- Link-->
+                <li class="sidebar-item"><a href="about.html" class="sidebar-link">Academics</a></li>
+                <!-- Link-->
+                <li class="sidebar-item"><a href="contact.html" class="sidebar-link">Experience</a></li>
+
+                <li class="sidebar-item"><a href="contact.html" class="sidebar-link">Hobbies</a></li>
+
+
+                
+                <img src="/img/image6.png" alt="QR code" style="width: 150px; height: 150px;">
+                <div class="lang-switch">
+                  <button onclick="switchLanguage('zh')">中文</button>
+                  <button onclick="switchLanguage('en')">English</button>
+                </div>
+                
+              
+    
+            </ul>
+            
+          </div>
+        </div>
+        <!--   *** SIDEBAR END ***  -->
+        <!--   *** DETAIL ***-->
+        <div class="col-md-8 col-lg-9 content-column white-background">
+          <div class="small-navbar d-flex d-md-none">
+            <button type="button" data-toggle="offcanvas" class="btn btn-outline-primary"> <i class="fa fa-align-left mr-2"></i>Menu</button>
+            <h1 class="small-navbar-heading"> <a href="index.html">Creative </a></h1>
+          </div>
+          <div class="row">
+            <div class="col-xl-10">
+              <div class="content-column-content">
+                <h1 id="nina">Going Back</h1>
+                  <div>
+                    <span>2023年02月12日</span>
+                    
+                  </div>
+                  
+                  </div>
+                  
+                  <div>
+                    <p data-lang="zh">我只能透过栏窗，另一个初中的我重叠。</p>
+                    <p data-lang="en" style="display: none;">All I can do is look through the bars, overlapping another version of myself from junior high.</p>
+                    <img src="/img/imae1.png" alt="Image 1">            
+                  </div>
+                  
+                  <div>
+                    <p data-lang="zh">我站着门口没有动，好像像等未来一样，等待过去的夏天。</p>
+                    <p data-lang="en" style="display: none;">I stand at the door motionless, as if waiting for the future, waiting for the summers of the past.</p>
+                    <img src="/img/imae2.png" alt="Image 2">
+                  </div>
+                  
+                  <div>
+                    <p data-lang="zh">像当年那样朝我奔来，那年风吹过操场的跑道，吹过午休黏腻的发丝，顺便带走了我的一腔热血。</p>
+                    <p data-lang="en" style="display: none;">Running towards me as in those days, the wind swept across the playground's track, through the sticky hair of a noon recess, casually taking away all my passion.</p>
+                    <img src="/img/imae3.png" alt="Image 3">
+                  </div>
+                  
+                  <div>
+                    <p data-lang="zh">我的记忆往回走，还记得当时，平淡却疯狂，失败却骄傲。</p>
+                    <p data-lang="en" style="display: none;">My memories walk back, still remembering those times, mundane yet crazy, failing yet proud.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- JavaScript files-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/popper.js/umd/popper.min.js"> </script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+  <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="vendor/masonry-layout/masonry.pkgd.min.js"></script>
+  <script src="js/front.js"></script>
+  <script>
+    function switchLanguage(language) {
+        // 获取所有具有 data-lang 属性的元素
+        var elements = document.querySelectorAll('[data-lang]');
+    
+        // 遍历这些元素，根据选择的语言显示或隐藏它们
+        elements.forEach(function(el) {
+            if (el.getAttribute('data-lang') === language) {
+                el.style.display = ''; // 显示该语言的元素
+            } else {
+                el.style.display = 'none'; // 隐藏其他语言的元素
+            }
+        });
+    }
+    
+    // 当页面加载完成后，默认显示中文
+    document.addEventListener('DOMContentLoaded', function() {
+        switchLanguage('zh');
+    });
+    </script>
+</body>
