@@ -58,7 +58,7 @@
 
   <nav style="display: flex; align-items: center; padding: 10px;">
     <a class="navbar-brand" href="./index.html" style="position: relative; top: 20px; left: 30px; bottom: 20px">
-        <img src="./images/logo2.png" alt="Logo">
+        <img style="margin-bottom: 20px;" src="./images/logo2.png" alt="Logo">
     </a>
 </nav>
 
@@ -83,7 +83,7 @@
                         </ul>
                         
                       </div>
-                      <p class="card-text entry-summary text-secondary mb-4">
+                      <p style="font-size: 16px;">
                         An online second-hand bookstore platform that provides people with various categories of books, access to books at low prices, and distributes books to rural schools in China by optimizing resources and facilitating book exchange
                       </p>
                      
@@ -106,11 +106,32 @@
     </div>
   </section>
 
+
+  <!-- 在适当的位置添加您的项目和原型介绍 -->
+<div class="section">
+  <h2>Project Introduction</h2>
+  <p>
+    <!-- 在这里添加关于您项目的简短介绍 -->
+    An entrepreneurial leader, as I define it, is someone who can identify opportunities, take initiative, make a difference, and is ready to embrace risks for their ventures...
+    <!-- 省略剩余内容，仅展示开头 -->
+  </p>
+  <button class="btn btn-primary" id="download-word1">Read More</button>
+</div>
+
+<div class="section">
+  <h2 style="margin-top: 20px;">Rocket Pitch</h2>
+  <video style="margin-top: 20px;" width="1226" height="720" controls>
+    <source src="images/hh.mp4" type="video/mp4">
+  </video>
+</div>
+
  
-  <h1>Customer Discovery Plan and Prototype</h1>
+  <h1 style="padding-top: 30px;">Customer Discovery Plan and Prototype</h1>
+
+  <button  class="btn btn-primary" id="download-word2" style="margin-top: 10px;"> Prototype File</button>
         
   <div class="section">
-      <h2>Customer Discovery Plan</h2>
+      <h2 style="margin-top: 20px;">Customer Discovery Plan</h2>
       <p>One member of your team will upload the graded assignment here.</p>
       <p>To develop a strong business or social impact project, you need to be able to identify the needs of your prospects and/or customers. As a result of completing the customer discovery assignment, you should be able to clearly describe the demographic, geographic, psychographic, and behavioral characteristics of your target audience(s) as much as possible. Please note that your decision-makers and/or purchasers may be a subgroup from the user profile and/or a totally different group. That means that the person buying the product is not the same person who will use it. An easy example is dog biscuits. The users are dogs but, much to their dismay, very few dogs have a budget to purchase their own biscuits, therefore the decision-maker is the dog's owner.</p>
       
@@ -249,6 +270,19 @@
       <p>Our team members considered several methods that would be more effective for our platform. The first is to build partnerships with schools, libraries, and NGOs to increase book donations and reach a wider audience. The second is to increase social media activity and use social media to raise awareness about your platform and its mission. Share success stories and impact metrics to attract more users and donors.</p>
   </div>
 </div>
+<script>  
+  document.getElementById('download-word1').addEventListener('click', function() {
+      // 假设 record.docx 和 HTML 文件在同一个目录下
+      window.location.href = './Inspirations.pdf';
+  });
+</script>
+
+<script> 
+  document.getElementById('download-word2').addEventListener('click', function() {
+      // 假设 record.docx 和 HTML 文件在同一个目录下
+      window.location.href = './prototype.pdf';
+  });
+</script>
 
 
   <!-- Javascript Files: Vendors -->
